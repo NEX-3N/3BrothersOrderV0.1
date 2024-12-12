@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Admin Panel</h1>
+    <button onclick="showManageProducts()">Manage Products</button>
+    <button onclick="showManageUsers()">Manage Users</button>
+    <button onclick="showOrderHistory()">Order History</button>
+    <button onclick="showUserAccounts()">Manage User Accounts</button>
+    <hr>
+    <input type="file" id="csvFileInput" accept=".csv" style="display: none;" onchange="importCSV(event)">
+    <button onclick="document.getElementById('csvFileInput').click()">Import Products (CSV)</button>
+    <div id="content-area"></div>
+  </div>
+  <script src="admin.js"></script>
+</body>
+</html>
