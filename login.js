@@ -1,5 +1,5 @@
 // Dummy data for authentication
-const adminCredentials = { username: "admin", password: "admin123" };
+const adminCredentials = { username: "admin", password: "1234" };
 const userCredentials = [
   { username: "user1", password: "123" },
   { username: "user2", password: "123" },
